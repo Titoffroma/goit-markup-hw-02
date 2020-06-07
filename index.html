@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio v.1</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a class="logo" href="">Web <span>Studio</span></a>
+      <a class="logo" href="./index.html">Web <span>Studio</span></a>
       <nav>
         <ul class="header-menu-list">
-          <li class="header-menu-listitem">Студия</li>
-          <li class="header-menu-listitem">Портфолио</li>
-          <li class="header-menu-listitem">Контакты</li>
+          <li class="header-menu-listitem">
+            <a href="./index.html">Студия</a>
+          </li>
+          <li class="header-menu-listitem">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-menu-listitem"><a href="">Контакты</a></li>
         </ul>
       </nav>
       <address class="header-contacts-list">
         <ul class="header-contacts-list">
           <li class="header-contacts-listitem">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com"
+              ><img src="./img/envelope.svg" alt="иконка конверта" />
+              info@devstudio.com</a
+            >
           </li>
           <li class="header-contacts-listitem">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="tel:+380961111111"
+              ><img src="./img/smartphone.svg" alt="иконка смартфона" /> +38 096
+              111 11 11</a
+            >
           </li>
         </ul>
       </address>
     </header>
     <main>
       <section>
-        <div id="mainimage">
+        <div class="mainimage">
           <h1>эффективные решения для вашего бизнеса</h1>
           <button>
             Заказать услугу
@@ -40,7 +56,7 @@
           <li class="our-benefits-listitem">
             <img
               class="our-benefits-listitem-image"
-              src="./img/antenna1.png"
+              src="./img/antenna1.svg"
               alt="Изоброжение антенны"
             />
             <h3>Внимание к деталям</h3>
@@ -52,7 +68,7 @@
           <li class="our-benefits-lisistem">
             <img
               class="our-benefits-listitem-image"
-              src="./img/clock1.png"
+              src="./img/clock1.svg"
               alt="Изоброжение часов"
             />
             <h3>Пунктуальность</h3>
@@ -64,7 +80,7 @@
           <li class="our-benefits-lisistem">
             <img
               class="our-benefits-listitem-image"
-              src="./img/diagram.png"
+              src="./img/diagram1.svg"
               alt="Изоброжение диаграммы"
             />
             <h3>Планирование</h3>
@@ -76,7 +92,7 @@
           <li class="our-benefits-lisistem">
             <img
               class="our-benefits-listitem-image"
-              src="./img/astronaut1.png"
+              src="./img/astronaut1.svg"
               alt="Изоброжение астронавта"
             />
             <h3>Современные технологии</h3>
@@ -91,33 +107,21 @@
         <div class="what-we-do">
           <h2>Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
-            <li class="what-we-do-list">
-              <div class="what-we-d-list-image1">
-                <img
-                  class="our-benefits-listitem-image"
-                  src="./img/img1.jpg"
-                  alt="Изоброжение ноутбука"
-                />
+            <li>
+              <div class="what-we-do-listimage">
+                <img src="./img/img1.jpg" alt="Изоброжение ноутбука" />
                 <h3 class="what-we-do-listitem">Десктопные приложения</h3>
               </div>
             </li>
-            <li class="what-we-do-list">
-              <div class="what-we-d-list-image2">
-                <img
-                  class="our-benefits-listitem-image"
-                  src="./img/img2.jpg"
-                  alt="Изоброжение смартфона"
-                />
+            <li>
+              <div class="what-we-do-listimage">
+                <img src="./img/img2.jpg" alt="Изоброжение смартфона" />
                 <h3 class="what-we-do-listitem">Мобильные приложения</h3>
               </div>
             </li>
-            <li class="what-we-do-list">
-              <div class="what-we-d-list-image3">
-                <img
-                  class="our-benefits-listitem-image"
-                  src="./img/img3.jpg"
-                  alt="Изоброжение сайта"
-                />
+            <li>
+              <div class="what-we-do-listimage">
+                <img src="./img/img3.jpg" alt="Изоброжение сайта" />
                 <h3 class="what-we-do-listitem">Дизайнерские решения</h3>
               </div>
             </li>
@@ -129,109 +133,109 @@
           <h2>Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-list-item">
-              <img src="./img/our-team-img-1.png" alt="John Smith" />
-              <h4 class="our-team-list-name">John Smith</h4>
+              <img src="./img/our-team-img-1.png" alt="Николай Кучеренко" />
+              <h4 class="our-team-list-name">Николай Кучеренко</h4>
               <p class="our-team-list-role">Product Designer</p>
               <ul class="our-team-list-item-social">
                 <li>
                   <a href="" class="social">
-                    <img src="./img/instagram2.png" alt="инстаграм" />
+                    <img src="./img/instagram.svg" alt="инстаграм" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/twitter1.png" alt="твиттер" />
+                    <img src="./img/twitter.svg" alt="твиттер" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/facebook1.png" alt="фейсбук" />
+                    <img src="./img/facebook.svg" alt="фейсбук" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/linkedin1.png" alt="линкедин" />
+                    <img src="./img/linkedin.svg" alt="линкедин" />
                   </a>
                 </li>
               </ul>
             </li>
             <li class="our-team-list-item">
-              <img src="./img/our-team-img-2.png" alt="Marta Stewart" />
-              <h4 class="our-team-list-name">Marta Stewart</h4>
+              <img src="./img/our-team-img-2.png" alt="Ольга Иванова" />
+              <h4 class="our-team-list-name">Ольга Иванова</h4>
               <p class="our-team-list-role">Frontend Developer</p>
               <ul class="our-team-list-item-social">
                 <li>
                   <a href="" class="social">
-                    <img src="./img/instagram2.png" alt="инстаграм" />
+                    <img src="./img/instagram.svg" alt="инстаграм" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/twitter1.png" alt="твиттер" />
+                    <img src="./img/twitter.svg" alt="твиттер" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/facebook1.png" alt="фейсбук" />
+                    <img src="./img/facebook.svg" alt="фейсбук" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/linkedin1.png" alt="линкедин" />
+                    <img src="./img/linkedin.svg" alt="линкедин" />
                   </a>
                 </li>
               </ul>
             </li>
             <li class="our-team-list-item">
-              <img src="./img/our-team-img-3.png" alt="Robert Jakis" />
-              <h4 class="our-team-list-name">Robert Jakis</h4>
+              <img src="./img/our-team-img-3.png" alt="Андрей Шевченко" />
+              <h4 class="our-team-list-name">Андрей Шевченко</h4>
               <p class="our-team-list-role">Marketing</p>
               <ul class="our-team-list-item-social">
                 <li>
                   <a href="" class="social">
-                    <img src="./img/instagram2.png" alt="инстаграм" />
+                    <img src="./img/instagram.svg" alt="инстаграм" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/twitter1.png" alt="твиттер" />
+                    <img src="./img/twitter.svg" alt="твиттер" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/facebook1.png" alt="фейсбук" />
+                    <img src="./img/facebook.svg" alt="фейсбук" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/linkedin1.png" alt="линкедин" />
+                    <img src="./img/linkedin.svg" alt="линкедин" />
                   </a>
                 </li>
               </ul>
             </li>
             <li class="our-team-list-item">
-              <img src="./img/our-team-img-4.png" alt="Martin Doe" />
-              <h4 class="our-team-list-name">Martin Doe</h4>
+              <img src="./img/our-team-img-4.png" alt="Иван Николаев" />
+              <h4 class="our-team-list-name">Иван Николаев</h4>
               <p class="our-team-list-role">UI Designer</p>
               <ul class="our-team-list-item-social">
                 <li>
                   <a href="" class="social">
-                    <img src="./img/instagram2.png" alt="инстаграм" />
+                    <img src="./img/instagram.svg" alt="инстаграм" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/twitter1.png" alt="твиттер" />
+                    <img src="./img/twitter.svg" alt="твиттер" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/facebook1.png" alt="фейсбук" />
+                    <img src="./img/facebook.svg" alt="фейсбук" />
                   </a>
                 </li>
                 <li>
                   <a href="" class="social">
-                    <img src="./img/linkedin1.png" alt="линкедин" />
+                    <img src="./img/linkedin.svg" alt="линкедин" />
                   </a>
                 </li>
               </ul>
@@ -245,17 +249,17 @@
           <ul class="our-clients-list">
             <li class="our-clients-listitem">
               <a href=""
-                ><img src="./img/Client1.png" alt="логотип клиента"
+                ><img src="./img/Client1.svg" alt="логотип клиента"
               /></a>
             </li>
             <li class="our-clients-listitem">
               <a href=""
-                ><img src="./img/Client2.png" alt="логотип клиента"
+                ><img src="./img/Client2.svg" alt="логотип клиента"
               /></a>
             </li>
             <li class="our-clients-listitem">
               <a href=""
-                ><img src="./img/Client3.png" alt="логотип клиента"
+                ><img src="./img/Client3.svg" alt="логотип клиента"
               /></a>
             </li>
             <li class="our-clients-listitem">
@@ -265,12 +269,12 @@
             </li>
             <li class="our-clients-listitem">
               <a href=""
-                ><img src="./img/Client5.png" alt="логотип клиента"
+                ><img src="./img/Client5.svg" alt="логотип клиента"
               /></a>
             </li>
             <li class="our-clients-listitem">
               <a href=""
-                ><img src="./img/Client6.png" alt="логотип клиента"
+                ><img src="./img/Client6.svg" alt="логотип клиента"
               /></a>
             </li>
           </ul>
@@ -278,11 +282,11 @@
       </section>
     </main>
     <footer>
+      <a class="footer-logo" href="./index.html">Web <span>Studio</span></a>
       <ul class="footer-list">
         <li>
-          <div class="footer-logo">Web <span>Studio</span></div>
           <address>
-            <ul>
+            <ul class="footer-contacts-list">
               <li>г. Киев, пр-т Леси Украинки, 26</li>
               <li><a href="mailto:info@example.com">info@example.com</a></li>
               <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
@@ -294,22 +298,22 @@
           <ul class="footer-social">
             <li>
               <a href="" class="social">
-                <img src="./img/instagram2.png" alt="инстаграм" />
+                <img src="./img/instagram.svg" alt="инстаграм" />
               </a>
             </li>
             <li>
               <a href="" class="social">
-                <img src="./img/twitter1.png" alt="твиттер" />
+                <img src="./img/twitter.svg" alt="твиттер" />
               </a>
             </li>
             <li>
               <a href="" class="social">
-                <img src="./img/facebook1.png" alt="фейсбук" />
+                <img src="./img/facebook.svg" alt="фейсбук" />
               </a>
             </li>
             <li>
               <a href="" class="social">
-                <img src="./img/linkedin1.png" alt="линкедин" />
+                <img src="./img/linkedin.svg" alt="линкедин" />
               </a>
             </li>
           </ul>
